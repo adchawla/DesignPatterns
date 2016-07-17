@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\GTK">
+      <UniqueIdentifier>{04f28e96-13ed-4084-b32b-610af0471257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QT">
+      <UniqueIdentifier>{b95c9e57-c823-4beb-85d8-422c12ada03e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GTK">
+      <UniqueIdentifier>{936918af-1682-43ee-ab61-ced834b5c86a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IApplicationWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IToolboxWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IStatusBarWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IUIFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GTKApplicationWindow.h">
+      <Filter>Header Files\GTK</Filter>
+    </ClInclude>
+    <ClInclude Include="IButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GTKToolboxWindow.h">
+      <Filter>Header Files\GTK</Filter>
+    </ClInclude>
+    <ClInclude Include="GTKStatusBarWindow.h">
+      <Filter>Header Files\GTK</Filter>
+    </ClInclude>
+    <ClInclude Include="GTKButton.h">
+      <Filter>Header Files\GTK</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GTKApplicationWindow.cpp">
+      <Filter>Source Files\GTK</Filter>
+    </ClCompile>
+    <ClCompile Include="GTKToolboxWindow.cpp">
+      <Filter>Source Files\GTK</Filter>
+    </ClCompile>
+    <ClCompile Include="GTKStatusBarWindow.cpp">
+      <Filter>Source Files\GTK</Filter>
+    </ClCompile>
+    <ClCompile Include="GTKButton.cpp">
+      <Filter>Source Files\GTK</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
