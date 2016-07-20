@@ -69,6 +69,12 @@
     <ClInclude Include="QTToolboxWindow.h">
       <Filter>Header Files\QT</Filter>
     </ClInclude>
+    <ClInclude Include="QTUIFactory.h">
+      <Filter>Header Files\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="GTKUIFactory.h">
+      <Filter>Header Files\GTK</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GTKApplicationWindow.cpp">
@@ -97,6 +103,15 @@
     </ClCompile>
     <ClCompile Include="QTToolboxWindow.cpp">
       <Filter>Source Files\QT</Filter>
+    </ClCompile>
+    <ClCompile Include="QTUIFactory.cpp">
+      <Filter>Source Files\QT</Filter>
+    </ClCompile>
+    <ClCompile Include="GTKUIFactory.cpp">
+      <Filter>Source Files\GTK</Filter>
+    </ClCompile>
+    <ClCompile Include="IUIFactory.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

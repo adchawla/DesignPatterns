@@ -1,47 +1,31 @@
-#include "GTKApplicationWindow.h"
-#include "GTKStatusBarWindow.h"
-#include "GTKToolboxWindow.h"
-#include "QTApplicationWindow.h"
-#include "QTStatusBarWindow.h"
-#include "QTToolboxWindow.h"
-
-#include "GTKButton.h"
-#include <iostream>
+#include "IUIFactory.h"
+#include "IApplicationWindow.h"
+#include "IToolboxWindow.h"
+#include "IStatusBarWindow.h"
+#include "IButton.h"
 
 void setupToolbox( IToolboxWindow * toolboxWindow );
 void setupShapeButtons( IToolboxWindow * toolboxWindow );
 void setupPenButtons( IToolboxWindow * toolboxWindow );
 void setupEraserButton( IToolboxWindow * toolboxWindow );
 
-// global variable to keep track which UI toolkit is selected.
-// Note: not the best way to achieve the switch but minimize the effort a lot.
-int uikit = -1;
-
 int main(int argc, char ** argv) {
 
 	// logic to switch ui kit
-	uikit = 1;
+	IUIFactory::eUIType uitype = IUIFactory::kUITGTK;
 	if ( argc > 1 ) {
 		if ( strcmp( argv[ 1 ], "qt" ) == 0 ) {
-			uikit = 2;
+			uitype = IUIFactory::kUITQT;
 		}
 	}
-	
-	IApplicationWindow * appWindow = nullptr;
-	IToolboxWindow * toolboxWindow = nullptr;
-	IStatusBarWindow * statusboxWindow = nullptr;
-	switch ( uikit ) {
-	case 1:
-		appWindow = new GTKApplicationWindow( 300, 400 );
-		toolboxWindow = new GTKToolboxWindow( 50, 400 );
-		statusboxWindow = new GTKStatusBarWindow( 50, 400 );
-		break;
+	IUIFactory::initializeUIFactory( uitype );
 
-	case 2:
-		appWindow = new QTApplicationWindow( 300, 400 );
-		toolboxWindow = new QTToolboxWindow( 50, 400 );
-		statusboxWindow = new QTStatusBarWindow( 50, 400 );
-	}
+	IUIFactory * uifactory = IUIFactory::getUIFactory();
+
+	IApplicationWindow * appWindow = uifactory->createApplicationWindow( 300, 400 );
+	IToolboxWindow * toolboxWindow = uifactory->createToolboxWindow(50, 400);
+	IStatusBarWindow * statusboxWindow = uifactory->createStatusBarWindow( 50, 400 );
+
 	appWindow->setStatusBarWindow( statusboxWindow );
 	appWindow->setToolboxWindow( toolboxWindow );
 	statusboxWindow->setMessage( "CAPS: ON" );
@@ -58,25 +42,28 @@ void setupToolbox( IToolboxWindow * toolboxWindow ) {
 
 
 void setupShapeButtons( IToolboxWindow * toolboxWindow ) {
-	IButton * rectButton = new GTKButton( "Draw Rect" );
-	IButton * circleButton = new GTKButton( "Draw Circle" );
-	IButton * polyButton = new GTKButton( "Draw Polygon" );
+	IUIFactory * uifactory = IUIFactory::getUIFactory();
+	IButton * rectButton = uifactory->createButton( "Draw Rect" );
+	IButton * circleButton = uifactory->createButton( "Draw Circle" );
+	IButton * polyButton = uifactory->createButton( "Draw Polygon" );
 	toolboxWindow->addButton( rectButton, -1 );
 	toolboxWindow->addButton( circleButton, -1 );
 	toolboxWindow->addButton( polyButton, -1 );
 }
 
 void setupPenButtons( IToolboxWindow * toolboxWindow ) {
-	IButton * markerButton = new GTKButton( "Draw With Marker" );
-	IButton * ballpenButton = new GTKButton( "Draw With Ball Pen" );
-	IButton * pencilButton = new GTKButton( "Draw With Pencil" );
+	IUIFactory * uifactory = IUIFactory::getUIFactory();
+	IButton * markerButton = uifactory->createButton( "Draw With Marker" );
+	IButton * ballpenButton = uifactory->createButton( "Draw With Ball Pen" );
+	IButton * pencilButton = uifactory->createButton( "Draw With Pencil" );
 	toolboxWindow->addButton( markerButton, -1 );
 	toolboxWindow->addButton( ballpenButton, -1 );
 	toolboxWindow->addButton( pencilButton, -1 );
 }
 
 void setupEraserButton( IToolboxWindow * toolboxWindow ) {
-	IButton * eraserButton = new GTKButton( "Eraser" );
+	IUIFactory * uifactory = IUIFactory::getUIFactory();
+	IButton * eraserButton = uifactory->createButton( "Eraser" );
 	toolboxWindow->addButton( eraserButton, -1 );
 }
 
