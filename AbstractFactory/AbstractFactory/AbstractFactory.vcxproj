@@ -156,6 +156,10 @@
     <ClInclude Include="IToolboxWindow.h" />
     <ClInclude Include="IUIFactory.h" />
     <ClInclude Include="IWindow.h" />
+    <ClInclude Include="QTApplicationWindow.h" />
+    <ClInclude Include="QTButton.h" />
+    <ClInclude Include="QTStatusBarWindow.h" />
+    <ClInclude Include="QTToolboxWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GTKApplicationWindow.cpp" />
@@ -163,6 +167,10 @@
     <ClCompile Include="GTKStatusBarWindow.cpp" />
     <ClCompile Include="GTKToolboxWindow.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="QTApplicationWindow.cpp" />
+    <ClCompile Include="QTButton.cpp" />
+    <ClCompile Include="QTStatusBarWindow.cpp" />
+    <ClCompile Include="QTToolboxWindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

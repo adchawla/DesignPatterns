@@ -1,66 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="IApplicationWindow">
-    <Position X="0.5" Y="3" Width="1.75" />
+  <Class Name="IApplicationWindow" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAQAAAAAgAAAAAAAAAAAAAAAAAgAQAAAAAAAAAAAA=</HashCode>
       <FileName>IApplicationWindow.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IWindow">
-    <Position X="3.5" Y="0.5" Width="1.5" />
+  <Class Name="IWindow" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAQAAA=</HashCode>
       <FileName>IWindow.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GTKApplicationWindow">
-    <Position X="0.75" Y="5.5" Width="2" />
+  <Class Name="GTKApplicationWindow" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="2" />
     <TypeIdentifier>
       <HashCode>QAAAQAAAAQgABAAQAAAAAAAAAAAAwAQAAAAAQAAQAAY=</HashCode>
       <FileName>GTKApplicationWindow.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GTKButton">
-    <Position X="9.5" Y="2.75" Width="1.5" />
+  <Class Name="QTButton" Collapsed="true">
+    <Position X="17.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAYAAA=</HashCode>
-      <FileName>GTKButton.h</FileName>
+      <HashCode>ACAAAAAAAAAAJAAAAAAACAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>QTButton.h</FileName>
+      <NewMemberFileName>GTKButton.h</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GTKStatusBarWindow">
-    <Position X="3.5" Y="5" Width="1.75" />
+  <Class Name="QTStatusBarWindow" Collapsed="true">
+    <Position X="6.25" Y="3.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>QAAAAAAAAACABAAAAgAIAAAAAAAAQAAAAAgAAAAwAAI=</HashCode>
-      <FileName>GTKStatusBarWindow.h</FileName>
+      <HashCode>QAAAAgAAAABABAAAAgAAAAAAAAAAQAAAAAgAAAAwAAI=</HashCode>
+      <FileName>QTStatusBarWindow.h</FileName>
+      <NewMemberFileName>GTKStatusBarWindow.h</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GTKToolboxWindow">
-    <Position X="6" Y="5" Width="1.75" />
+  <Class Name="QTToolboxWindow" Collapsed="true">
+    <Position X="11" Y="3.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>QAAAAEAABAAABAAAAAAAAAAAQAAAQAAAiAAAAAAQAAI=</HashCode>
-      <FileName>GTKToolboxWindow.h</FileName>
+      <HashCode>QAAAAAAQBCAABAAAAAAAAAAAQAAAQAAAgAAAAAAQAAI=</HashCode>
+      <FileName>QTToolboxWindow.h</FileName>
+      <NewMemberFileName>GTKToolboxWindow.h</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IButton">
-    <Position X="9.5" Y="0.5" Width="1.5" />
+  <Class Name="IButton" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>IButton.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IStatusBarWindow">
-    <Position X="3.5" Y="3" Width="1.75" />
+  <Class Name="IStatusBarWindow" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
       <FileName>IStatusBarWindow.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="IToolboxWindow">
-    <Position X="6" Y="3" Width="1.5" />
+  <Class Name="IToolboxWindow" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>IToolboxWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QTApplicationWindow" Collapsed="true">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAQAAAARgABAAAAAAAAAAAAABAwAQAAAAAAAAQAAY=</HashCode>
+      <FileName>QTApplicationWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GTKButton" Collapsed="true">
+    <Position X="15.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAYAAA=</HashCode>
+      <FileName>GTKButton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GTKStatusBarWindow" Collapsed="true">
+    <Position X="8.75" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAACABAAAAgAIAAAAAAAAQAAAAAgAAAAwAAI=</HashCode>
+      <FileName>GTKStatusBarWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GTKToolboxWindow" Collapsed="true">
+    <Position X="13.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAABAAABAAAAAAAAAAAQAAAQAAAiAAAAAAQAAI=</HashCode>
+      <FileName>GTKToolboxWindow.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

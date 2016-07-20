@@ -22,6 +22,9 @@
     <Filter Include="Source Files\GTK">
       <UniqueIdentifier>{936918af-1682-43ee-ab61-ced834b5c86a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\QT">
+      <UniqueIdentifier>{4758ad4b-8dac-411f-aac4-9211816dd37b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IWindow.h">
@@ -54,6 +57,18 @@
     <ClInclude Include="GTKButton.h">
       <Filter>Header Files\GTK</Filter>
     </ClInclude>
+    <ClInclude Include="QTApplicationWindow.h">
+      <Filter>Header Files\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="QTButton.h">
+      <Filter>Header Files\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="QTStatusBarWindow.h">
+      <Filter>Header Files\QT</Filter>
+    </ClInclude>
+    <ClInclude Include="QTToolboxWindow.h">
+      <Filter>Header Files\QT</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GTKApplicationWindow.cpp">
@@ -70,6 +85,18 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QTApplicationWindow.cpp">
+      <Filter>Source Files\QT</Filter>
+    </ClCompile>
+    <ClCompile Include="QTButton.cpp">
+      <Filter>Source Files\QT</Filter>
+    </ClCompile>
+    <ClCompile Include="QTStatusBarWindow.cpp">
+      <Filter>Source Files\QT</Filter>
+    </ClCompile>
+    <ClCompile Include="QTToolboxWindow.cpp">
+      <Filter>Source Files\QT</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
