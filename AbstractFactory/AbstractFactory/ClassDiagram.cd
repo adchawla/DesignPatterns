@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IApplicationWindow">
+    <Position X="0.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAgAAAAAAAAAAAAAAAAAgAQAAAAAAAAAAAA=</HashCode>
+      <FileName>IApplicationWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IWindow">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAQAAA=</HashCode>
+      <FileName>IWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GTKApplicationWindow">
+    <Position X="0.75" Y="5.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAQAAAAQgABAAQAAAAAAAAAAAAwAQAAAAAQAAQAAY=</HashCode>
+      <FileName>GTKApplicationWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GTKButton">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAEAAAAAYAAA=</HashCode>
+      <FileName>GTKButton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GTKStatusBarWindow">
+    <Position X="3.5" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAACABAAAAgAIAAAAAAAAQAAAAAgAAAAwAAI=</HashCode>
+      <FileName>GTKStatusBarWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GTKToolboxWindow">
+    <Position X="6" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAEAABAAABAAAAAAAAAAAQAAAQAAAiAAAAAAQAAI=</HashCode>
+      <FileName>GTKToolboxWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IButton">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>IButton.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IStatusBarWindow">
+    <Position X="3.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>IStatusBarWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IToolboxWindow">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>IToolboxWindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
